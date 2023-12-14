@@ -25,3 +25,7 @@ require("lazy").setup("plugins", {
 
 --gruvbox配置
 require("plugins-config/gruvbox")
+--nvim-treesitter配置
+require("plugins-config/nvim-treesitter")
+--toggleterm配置
+require("plugins-config/toggleterm")

@@ -23,3 +23,8 @@ vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeToggle<CR>", {noremap = true
 --telescop
 vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope find_files<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>fg", ":Telescope live_grep<CR>", {noremap = true, silent = true})
+
+--toggleterm
+--在终端中回到normal模式 可以对输出进行拷贝
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap = true, silent = true}) 
+vim.api.nvim_set_keymap("n", "<leader>t", ":TermSelect<CR>", {noremap = true, silent = true}) 
