@@ -41,7 +41,7 @@ renderer = {
         show = {
             file = false,
             folder = false,
-            folder_arrow = false,
+            folder\_arrow = false,
             git = false,
             modified = false,
             diagnostics = false,
@@ -60,3 +60,7 @@ mason.setup({
         }
     }
 })
+
+注意：
+1.如何给插件配置set\_up
+2.如何在插件set\_up中获取keybinds配置的快捷键
