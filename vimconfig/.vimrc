@@ -41,6 +41,8 @@ nnoremap <silent> [t :tprevious<CR>
 nnoremap <silent> ]t :tnext<CR>
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
+tnoremap <silent> [f <C-\><C-n>:FloatermPrev<CR>
+tnoremap <silent> ]f <C-\><C-n>:FloatermNext<CR>
 
 "可视模式下的*、#
 xnoremap * :<C-u>call <SID>VSetSearch('/')<CR>/<C-R>=@/<CR><CR>
@@ -75,9 +77,15 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 
 "映射fzf的:Files到, + o
-nnoremap <leader>o :Files<CR>
+nnoremap <leader>fo :Files<CR>
 "映射fzf的:RG到, + f
-nnoremap <leader>f :RG<CR>
+nnoremap <leader>fg :RG<CR>
+
+"voldikss/vim-floaterm
+nnoremap <leader>fn :FloatermNew<CR>
+tnoremap <leader>fn <C-\><C-n>:FloatermNew<CR>
+nnoremap <leader>ft :FloatermToggle<CR>
+tnoremap <leader>ft <C-\><C-n>:FloatermToggle<CR>
 
 "setup color-scheme
 set background=dark
@@ -104,6 +112,9 @@ Plug 'majutsushi/tagbar'
 " If installed using Homebrew on Apple Silicon
 Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf.vim'
+
+"voldikss/vim-floaterm
+Plug 'voldikss/vim-floaterm'
 
 "When combined with a set of tmux key bindings, the plugin will allow you to
 "navigate seamlessly between vim and tmux splits using a consistent set of
