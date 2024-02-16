@@ -65,3 +65,5 @@ require("plugins-config/nvim-cmp")
 --bind-key -T copy-mode-vi 'C-l' select-pane -R
 --bind-key -T copy-mode-vi 'C-\' select-pane -l
 require("plugins-config/smart-splits")
+--symbol-outline配置
+require("plugins-config/symbols-outline")
