@@ -6,6 +6,10 @@ vim.g.mapleader = ","
 --关闭当前窗口
 vim.api.nvim_set_keymap("n", "<C-c>", ":q<CR>", {noremap = true, silent = true}) 
 
+--保存文件
+vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("i", "<C-s>", "<C-o>:w<CR>", {noremap = true, silent = true})
+
 --借鉴了unimpaired.vim
 vim.api.nvim_set_keymap("n", "[b", ":bprevious<CR>", {noremap = true, silent = true}) 
 vim.api.nvim_set_keymap("n", "]b", ":bnext<CR>", {noremap = true, silent = true}) 
@@ -27,6 +31,8 @@ vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeToggle<CR>", {noremap = true
 vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope find_files<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>fg", ":Telescope live_grep<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>fh", ":Telescope help_tags<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>fh", ":Telescope help_tags<CR>", {noremap = true, silent = true})
+
 
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
