@@ -30,7 +30,7 @@ vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeToggle<CR>", {noremap = true
 --telescop
 vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope find_files<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>fg", ":Telescope live_grep<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<leader>fh", ":Telescope help_tags<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>fs", ":Telescope grep_string<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>fh", ":Telescope help_tags<CR>", {noremap = true, silent = true})
 
 
@@ -47,6 +47,9 @@ pluginKeys.telescopeList = {
 
 --toggleterm
 vim.api.nvim_set_keymap("n", "<leader>t", ":TermSelect<CR>", {noremap = true, silent = true}) 
+
+--symbols-outline
+vim.api.nvim_set_keymap("n", "<leader>s", ":SymbolsOutline<CR>", {noremap = true, silent = true})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
